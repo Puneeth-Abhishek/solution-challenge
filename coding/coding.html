@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="coding.css">
+  <title>Coding Resources</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Coding Resources</h1>
+    <div class="box" onclick="redirectTo('java')">Java</div>
+    <div class="box" onclick="redirectTo('python')">Python</div>
+    <div class="box" onclick="redirectTo('sql')">SQL</div>
+    <div class="box" onclick="redirectTo('Blockchain')">Blockchain</div>
+    <div class="box" onclick="redirectTo('javascript')">javascript</div>
+    <div class="box" onclick="redirectTo('html')">HTML</div>
+    <div class="box" onclick="redirectTo('css')">CSS</div>
+  </div>
+
+  <script>
+    function redirectTo(language) {
+      // Replace the URLs with your desired destinations
+      const redirects = {
+        'java': 'https://www.w3schools.com/java/',
+        'python': 'https://learnpython.org/',
+        'sql': 'https://www.w3schools.com/sql/',
+        'Blockchain': 'https://cryptozombies.io/',
+        'javascript': 'https://javascript.info/',
+        'html': 'https://html.com/',
+        'css': 'https://web.dev/learn/css',
+      };
+
+      // Redirect to the specified URL
+      window.location.href = redirects[language];
+    }
+  </script>
+</body>
+
+</html>

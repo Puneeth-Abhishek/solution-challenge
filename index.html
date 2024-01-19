@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Education Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">The Education Hub</div>
+            <div class="option">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Blog</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h2>Resources</h2>
+        <div class="container">
+            <div class="inter">
+                <div class="box box1" onclick="redirectTo('1')">Coding</div>
+                <div class="box box2" onclick="redirectTo('2')">Physics</div>
+                <div class="box box3" onclick="redirectTo('3')">Chemistry</div>
+            </div>
+            <div class="college">
+                <div class="box box1" onclick="redirectTo('4')">Maths</div>
+                <div class="box box2" onclick="redirectTo('5')">Engineering Mathematics</div>
+                <div class="box box3" onclick="redirectTo('6')">English</div>
+            </div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+
+    <script>
+        function redirectTo(key) {
+            const redirects = {
+                '1': "coding/coding.html",
+                '2': "physics.html",
+                '3': "chemistry.html",
+                '4': "maths_english.html",
+                '5': "engineering_mathematics.html",
+                '6': "english/english.html"
+            };
+
+            const url = redirects[key];
+
+            if (url) {
+                window.location.href = url;
+            }
+        }
+    </script>
+</body>
+</html>

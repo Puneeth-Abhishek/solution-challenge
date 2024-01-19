@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000000;
+    color: #F0EDCF;
+}
+
+header {
+    background-color: #212529; /* Updated color */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 20px;
+    background-color: #212529; /* Updated color */
+}
+
+nav .logo {
+    font-size: 30px;
+    color: #F0EDCF;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    list-style: none;
+    font-size: 20px;
+    color: #F0EDCF;
+    border: 2px solid #40A2D8;
+    padding: 10px 15px;
+    border-radius: 7px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav ul li:hover {
+    background-color: #40A2D8;
+}
+
+main {
+    background-color: #213363;
+    padding: 20px;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inter,
+.college {
+    width: 80vw;
+    height: 200px;
+    margin: 30px auto;
+    border: 3px solid #000000;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.box {
+    height: 150px;
+    width: 30%;
+    background-color: #000000;
+    color: #F0EDCF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border: 2px solid #F0EDCF;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.box:hover {
+    background-color: #0B60B0;
+}
